@@ -21,6 +21,7 @@ body {
   }
   
   #navFeatures a {
+    cursor: pointer;
     text-decoration: none;
     font-size: 18px;
     line-height: 22.68px;
@@ -35,6 +36,7 @@ body {
   }
   
   #navButtons > a {
+    cursor: pointer;
     text-decoration: none;
     color: #fb5f66;
     font-size: 16px;
