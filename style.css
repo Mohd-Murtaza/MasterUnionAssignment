@@ -1,0 +1,294 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+  
+  #navbar {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    padding: 20px;
+  }
+  
+  #navFeatures {
+    display: flex;
+    gap: 40px;
+  }
+  
+  #navFeatures a {
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 22.68px;
+    font-weight: 400;
+    color: #2b2b2b;
+  }
+  
+  #navButtons {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+  
+  #navButtons > a {
+    text-decoration: none;
+    color: #fb5f66;
+    font-size: 16px;
+    line-height: 20.16px;
+    font-weight: 500;
+  }
+  
+  #navButtons > button {
+    background-color: #fb5f66;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 20.16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 40px;
+  }
+  
+  #section1 {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .image-container {
+    position: relative;
+    width: fit-content;
+    height: 338px;
+    width: 288px;
+  }
+  
+  .image-container .shadow,
+  .image-container .lines {
+    height: 338px;
+    width: 288px;
+  }
+  
+  .image-container .lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  
+  #voiceTutor {
+    text-align: center;
+  }
+  
+  .tags {
+    width: 204px;
+    margin: 0 auto 20px;
+    background-color: #fff2f3;
+    border-radius: 34px;
+    padding: 6px 10px;
+    font-size: 12px;
+    line-height: 15.12px;
+    font-weight: 400;
+    color: #fb5f66;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  
+  #voiceTutor > div > h1 {
+    font-size: 44px;
+    line-height: 52.8px;
+    font-weight: 600;
+    color: #222222;
+    margin: 0 0 10px;
+  }
+  #voiceTutor > div:nth-child(2){
+    position: relative;
+  }
+  #voiceTutor> div:nth-child(2) span {
+    position: absolute;
+    top: 45px; 
+    left: 70%; 
+    transform: translateX(-50%);
+  }
+  
+  #voiceTutor > p {
+    font-size: 18px;
+    line-height: 28.8px;
+    font-weight: 400;
+    color: #414141;
+    margin: 0;
+  }
+  
+  #voiceTutor > button {
+    margin-top: 25px;
+    background-color: #fb5f66;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 20.16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 28px;
+  }
+  
+  #section2 {
+    margin-top: 80px !important;
+    width: 85%;
+    margin: auto;
+    text-align: center;
+  }
+  
+  #section2 > h1 {
+    font-size: 36px;
+    line-height: 43.2px;
+    font-weight: 600;
+    color: #222222;
+    margin: 0 0 20px;
+    position: relative;
+  }
+  #voiceTutor>span{
+    left: 750px;
+    top: 280px;
+    position: absolute;
+  }
+  
+  #flexBox {
+    margin: 50px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  #flexBox > div {
+    width: 100%;
+    max-width: 32%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  #flexBox > div > div {
+    background: linear-gradient(to bottom, rgb(255, 255, 255) 80%, #fb5f670c 100%);
+    flex-grow: 1;
+    border-radius: 8px;
+    border: 1px solid #e1e0e0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  #flexBox > div:nth-child(2)>div{
+    background: linear-gradient(to bottom, rgb(255, 255, 255) 10%, #fb5f670c 100%);
+  }
+  #flexBox div > div > div {
+    background-color: #ffedee;
+    border-radius: 8px;
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-items: center;
+  }
+  
+  #flexBox div > div > p {
+    font-size: 18px;
+    line-height: 28.8px;
+    font-weight: 400;
+    color: #444444;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    #navbar {
+      width: 95%;
+      gap: 20px;
+    }
+  
+    #navFeatures {
+      gap: 40px;
+    }
+    #navFeatures>a:nth-child(2), #navFeatures>a:nth-child(3){
+        display: none;
+    }
+  
+    #section1 {
+      width: 90%;
+      margin: auto;
+    }
+    #section1 .image-container {
+        display: none;
+    }
+    
+  
+    #voiceTutor > h1 {
+      font-size: 36px;
+    }
+
+    #section2{
+        width: 90%;
+    }
+    #flexBox {
+        margin: 50px 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+      #flexBox > div {
+        width: 100%;
+        max-width: 90%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+  }
+  
+  @media (max-width: 480px) {
+    #navbar {
+      width: 90%;
+      padding: 10px;
+    }
+  
+    #navFeatures a {
+      font-size: 16px;
+      display: none;
+    }
+  
+    #navButtons > button {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  
+    #voiceTutor > h1 {
+      font-size: 28px;
+    }
+  
+    #voiceTutor > p {
+      font-size: 16px;
+    }
+
+    .image-container{
+        display: none;
+    }
+    #section2 > h1 {
+      font-size: 28px;
+    }
+  
+    .tags {
+      width: 160px;
+      font-size: 10px;
+    }
+  }
+  
