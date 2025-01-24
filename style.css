@@ -20,7 +20,7 @@ body {
     gap: 40px;
   }
   
-  #navFeatures a {
+  #navFeatures>a {
     cursor: pointer;
     text-decoration: none;
     font-size: 18px;
@@ -231,10 +231,21 @@ body {
         display: none;
     }
     
-  
-    #voiceTutor > h1 {
-      font-size: 36px;
+    #voiceTutor > div > h1 {
+      font-size: 30px;
+      line-height: 42.8px;
     }
+    #voiceTutor> div:nth-child(2) span {
+      position: absolute;
+      top: 30px;
+    }
+    #voiceTutor > div:nth-child(2)> span > img{
+        width: 120px;
+    }
+
+    #section2 > h1 {
+        font-size: 30px;
+      }
 
     #section2{
         width: 90%;
@@ -273,9 +284,10 @@ body {
       font-size: 14px;
     }
   
-    #voiceTutor > h1 {
-      font-size: 28px;
-    }
+    #voiceTutor > div > h1 {
+        font-size: 22px;
+        line-height: 42.8px;
+      }
   
     #voiceTutor > p {
       font-size: 16px;
@@ -285,7 +297,7 @@ body {
         display: none;
     }
     #section2 > h1 {
-      font-size: 28px;
+      font-size: 22px;
     }
   
     .tags {
